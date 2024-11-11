@@ -1,6 +1,11 @@
-from flask import Flask, jsonify, request
+from flask import Flask
+
+# Allow CORS policy tutorial so angular app can communicate
+# https://pypi.org/project/Flask-Cors/
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Home route
 @app.route('/')
