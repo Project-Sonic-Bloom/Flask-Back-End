@@ -1,0 +1,1 @@
+# This script opens the csv file and visualises what is present line by line
