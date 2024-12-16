@@ -29,4 +29,6 @@ jobs:
 
       # run tests
       - name: Run data-visualisation-test.py
-        run: python ../scripts/test/data-visualisation-test.py
+        run: |
+          cd ../scripts/test/
+          python ../scripts/test/data-visualisation-test.py
