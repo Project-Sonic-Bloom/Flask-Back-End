@@ -30,5 +30,5 @@ jobs:
       # run tests
       - name: Run data-visualisation-test.py
         run: |
-          cd ../scripts/test/
-          python ../scripts/test/data-visualisation-test.py
+          cd ./scripts/test/
+          python data-visualisation-test.py
