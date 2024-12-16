@@ -1,9 +1,10 @@
 from flask import Flask
+from flask_cors import CORS
+
+from scripts.main.dataVisualisation import *
 
 # Allow CORS policy tutorial so angular app can communicate
 # https://pypi.org/project/Flask-Cors/
-from flask_cors import CORS
-
 app = Flask(__name__)
 CORS(app)
 
@@ -11,6 +12,11 @@ CORS(app)
 @app.route('/')
 def home():
     return "Hello, World!"
+
+@app.route('/GenerateHeatmap',  methods = ['POST'])
+def GenerateHeamap():
+    print(hello())
+    return
 
 
 if __name__ == '__main__':
