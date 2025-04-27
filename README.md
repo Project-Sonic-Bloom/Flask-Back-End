@@ -25,6 +25,7 @@
 
 ### Install the dependencies:
 > pip install -r dependencies.txt
+
 > pip install selenium
 
 ### Run the server 
